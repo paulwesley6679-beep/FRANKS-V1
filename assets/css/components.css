@@ -1,0 +1,117 @@
+/* components.css */
+
+/* Buttons */
+.btn {
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #ff8b75;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color:#333
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+}
+
+/* Header */
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.rem;
+    color: #ff6f61;
+}
+
+/* Navigation */
+.nav-link {
+    padding: 0.5 rem;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3;
+}
+
+.nav-link:hover {
+    color: #ff6f61;
+}
+
+/* List */
+.benefits-list li {
+    margin-bottom: 1rem;
+}
+/* Card for products */
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 0.8rem;
+}
+
+.card-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Hover effect */
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* Forms */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Flex buttons in forms */
+.form-grid button {
+    width: fit-content;
+    justify-self: center;
+}

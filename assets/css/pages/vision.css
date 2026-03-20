@@ -1,0 +1,62 @@
+/* Vision.css */
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(120deg, #e88145dd, #df40ba);
+    color: #fff;
+}
+
+.hero .logo {
+    width: 120px;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: 1.rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn-primary {
+    font-size: 1rem;
+}
+
+/* Choose Role Hero Section */
+.role-hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f8f8f8;
+    color: #333;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 1px rgba(0,0,0,0.05);
+}
+
+.role-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.role-hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.role-hero .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+}

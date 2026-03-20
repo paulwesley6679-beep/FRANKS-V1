@@ -1,0 +1,40 @@
+/* seller.css */
+/* Form-grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.form-grid label {
+    font-weight: 500px;
+    margin-bottom: 0.3;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: o.3s;
+}
+
+.form-grid input:focus,
+.form-grid select:focus,
+.form-grid textarea:focus {
+    outline: none;
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255,111,97,0.4);
+}
+
+/* Seller products preview */
+#seller-products .product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.5;
+}

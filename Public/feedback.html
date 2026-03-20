@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FRANKS -Feedback</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages/seller.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header class="site-header" role="banner" aria-label="Feedback Header">
+      <div class="container flex">
+        <a href="index.html" class="logo-link">
+            <img src="#" alt="FRANKS Logo" class="logo">
+            <span class="logo-text">FRANKS</span>
+        </a>
+        <nav aria-label="Main Naviagtion">
+            <ul class="flex gap-1">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+                <li><a href="seller-dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Feedback Form-->
+    <main class="container text-center" role="main" aria-labelledby="feedback-heading">
+        <h1 id="feedback-heading">We value Your Feedback</h1>
+        <p>Your experience helps us improve FRANKS Marketplace.</p>
+
+        <form id="feedback-form" class="form-grid" aria-label="Feedback Form">
+            <!--NAME-->
+            <label for="user-name">Your Name</label>
+            <input type="text" id="user-name" name="user-name" placeholder="E.g.John Doe" required>
+
+            <!--Email-->
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" name="user-email" placeholder="john@example required">
+
+            <!--Role-->
+            <label for="user-role">I am a:</label>
+            <select id="user-role" name="user-role" required>
+                <option value="">Select Role</option>
+                <option value="buyer">Buyer</option>
+                <option value="seller">Seller</option>
+            </select>
+
+            <!--Feedback-->
+            <label for="user-feedback">Your Feedback</label>
+            <textarea id="user-feedback" name="user-feedback" rows="5" placeholder="your experience..." required></textarea>
+
+            <!--Submit-->
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+    </main>
+
+    <!--Footer-->
+    <footer role="contentinfo" class="container text-center">
+        <p>&copy; 2026 FRANKS Marketplace | All Right Reserved</p>
+    </footer>
+
+    <!--Script-->
+    <script src="../assets/js/feedback.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FRANKS - Seller Dashboard</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages/seller.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header class="site-header" role="banner" aria-label="Seller Dashboard Header">
+        <div class="container flex">
+          <a href="index.html" class="logo-link">
+            <img src="#" alt="FRANKS Logo" class="logo">
+             <span class="logo-text">FRANKS</span>
+          </a>
+          <nav aria-label="Seller Navigation">
+            <ul class="flex gap-1">
+              <li><a href="seller-onboarding.html" class="nav-link">Onboarding</a></li>
+              <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+              <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <!--Seller Dashboard / Upload Form-->
+    <main class="container" role="main" aria-labelledby="dashboard-heading">
+        <h1 id="dashboard-heading" class="text-center">Seller Dashboard</h1>
+        <p class="text-center">Upload your products to showcase them in the marketplace.</p>
+
+        <form id="seller-form" class="form-grid" aria-label="Products Upload Form">
+            <!--Product Name-->
+            <label for="product-name">Product Name</label>
+            <input type="text" id="product-name" name="product-name" placeholder="E.g. Polo T-shirt" required>
+
+            <!--Categories-->
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+                <option value="">Select Categories</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="thrift">Thrift</option>
+            </select>
+
+            <!--Subcategories-->
+            <label for="subcategory">subcategory</label>
+            <select id="subcategory" required>
+                <option value="">Select subcategory</option>
+                <!--Populated dynamically via Js based on category-->
+            </select>
+
+                <!--Price-->
+                <label for="price">Price (&#8358;)</label>
+                <input type="number" id="price" name="price" placeholder="E.g 5000" min="0" required>
+
+                <!--Image URL-->
+                <label for="image-url">Image URL</label>
+                <input type="url" id="image-url" name="image-url" placeholder="https://example.com/image.jpg" required>
+
+                <!--WhatsApp Link-->
+                <label for="whatsapp-link">whatsApp Link</label>
+                <input type="url" id="whatsapp-link" name="whatsapp-link" placeholder="http://wa.me/23480 1234567890" required>
+
+
+            <!--Submit-->
+            <button type="submit" class="btn btn-primary">Upload Product</button>
+        </form>
+            <!--Product Preview Grid-->
+            <section id="seller-products" class="grid gap-2 mt-2" aria-label="Your Uploaded Products">
+                <!--Uploaded product appears here dynamically-->
+            </section>
+    </main>
+
+    <!--Footer-->
+    <footer role="contentinfo" class="container text-center">
+        <p>&copy; 2026 FRANKS Marketplace | All Right Reserved</p>
+    </footer>
+
+    <!--Script-->
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/seller.js"></script>
+
+  </body>
+</html>

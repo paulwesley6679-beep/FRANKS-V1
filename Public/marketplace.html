@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FRANKS Marketplace - Browse</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/pages/marketplace.css">
+</header>
+<body>
+
+  <!--Header-->
+  <header class="site-header" role="banner" aria-label="Marketplace Header">
+    <div class="container flex">
+        <a href="index.html" class="logo-link">
+            <img src="#" alt="FRANKS Logo" class="logo">
+            <span class="logo-text">FRANKS</span>
+        </a>
+        <nav aria-label="=Main Navigation">
+          <ul class="flex gap-1">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#categories" class="nav-link">Categories</a></li>
+            <li><a href="#trending" class="nav-link">Trending</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+  <!--Top Categories-->
+  <section id="categories" role="region" aria-labelledby="categories-heading" class="container mt-2">
+    <h2 id="categories-heading">Shop by category</h2>
+    <div class="flex top-categories gap-2">
+       <button class="category-btn" data-category="men" aria-pressed="false">Men</button>
+       <button class="category-btn" data-category="women" aria-pressed="false">Women</button>
+       <button class="category-btn" data-category="thrift" aria-pressed="false">Thrift</button>
+    </div>
+
+    <!--Subcategories (Dynamics)-->
+    <div id="subcategories" class="flex gap-2" aria-live="polite"></div>
+  </section>
+
+  <!--Product listings-->
+  <section id="products" role="region" aria-labelledby="products-heading" class="container">
+    <h2 id="products-heading" class="grid gap-2">Products</h2>
+    <div id="product-grid" class="grid gap-2">
+     <!--Products will dynamically rendered here-->
+    </div>
+  </section>
+
+  <!--Trending Now-->
+  <section id="trending" role="region" aria-labelledby="trending-heading" class="container mt-2">
+    <h2 id="trending-heading">Trending Now</h2>
+    <div id="trending-grid" class="grid gap-2">
+        <!--Trending Items dynamically loaded from Js-->
+    </div>
+  </section>
+
+
+  <footer role="contentinfo" class="container text-center">
+    <p>&copy; 2026 FRANKS Marketplace | All Right Reserved</p>
+  </footer>
+
+  <!--linking JS-->
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/shuffle.js"></script>
+  <script src="../assets/js/marketplace.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* marketplace.css */
+
+/* Top categories */
+.top-categories {
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #ff6f61;
+    background: #fff;
+    color: #ff6f61;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-btn:hover,
+.category-btn[aria-pressed="true"]{
+    background-color: #ff6f61;
+    color: #fff;
+}
+    
+
+/* Product Grid */
+#product-grid .product-card {
+    border: 1px solid #e0e0e0ee;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5rem;
+    transition: 0.3s ease;
+}
+
+#product-grid .product-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Trending Grid */
+#trending-grid .product-card {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Section spacing */
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

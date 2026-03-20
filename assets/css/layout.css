@@ -1,0 +1,40 @@
+/* Layout */
+
+/* COntainer */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/* Flex helpers */
+.flex {
+    display: flex;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-1 { gap:0.5rem; }
+.gap-2 { gap: 1rem; }
+.mt-2 {margin-top: 1rem}
+.mb-2 {margin-bottom: 1rem;}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+/* Header spacing */
+.site-header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    background-color:#fff;
+}
+
+/* Text center */
+.text-center { text-align: center;}
